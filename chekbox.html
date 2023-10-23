@@ -1,0 +1,111 @@
+<html>
+	<head>
+	<script>
+		function stampa(){
+		var print = document.getElementById("demo").value;
+		document.getElementById("dest").innerHTML=print;
+			
+		var print = document.getElementById("ciao").value;
+		document.getElementById("f").innerHTML=print;
+			
+		var print = document.getElementById("zio").value;
+		document.getElementById("g").innerHTML=print;
+			
+		var print = document.getElementById("nipote").value;
+		document.getElementById("j").innerHTML=print;
+			
+		var print = document.getElementById("buongiorno").value;
+		document.getElementById("h").innerHTML=print;
+		}
+	</script>
+	</head>
+	<body>
+		<div allign=center>
+		<h1> anagrafica </h1>
+		<h3> nome </h3>
+		<input type="text" id="demo">
+		<p></P>
+		<h3> cognome </h3>
+		<input type="text" id="ciao">
+		<p></P>
+		<h3> indirizzo </h3>
+		<input type="text" id="zio">
+		<h3> data di nascita</h3>
+		<p></P>
+		<input type="text" id="nipote">
+		<h3> luogo geofisico di nascita </h3>
+		<p></P>
+		<input type="text" id="buongiorno">
+		<p></P>
+		</div>
+			
+		<input type ="button" value = "print all" onclick="stampa()">
+		<p id = "dest"></p>
+		<p id = "f"></p>
+		<p id = "g"></p>
+		<p id = "j"></p>
+		<p id = "h"></p>
+
+
+		<P><h3>checkbox</h3></P>
+		<label for="myCheckbox">italiano:</label>
+		<input type="checkbox" id="italiano">
+		<label for="myCheckbox">storia:</label>
+		<input type="checkbox" id="storia">
+		<label for="myCheckbox">informatica:</label>
+		<input type="checkbox" id="informatica">
+		<input type="button" value="press" onclick="myFunction()">
+			
+		<P id = "text"></p>
+		<P id = "text1"></p>
+		<P id = "text2"></p>
+			
+		<script>
+			function myFunction(){
+				var ita = document.getElementById("italiano");
+				var st = document.getElementById("storia");
+				var inf = document.getElementById("informatica");
+				
+				if (ita.checked){
+					document.getElementById("text").innerHTML= "italiano";
+				}else{
+					document.getElementById("text").innerHTML= "";
+				}
+				if (st.checked){
+					document.getElementById("text1").innerHTML= "storia";
+				}else{
+					document.getElementById("text1").innerHTML= "";
+				}
+				if (inf.checked){
+					document.getElementById("text2").innerHTML= "informatica";
+				}else{
+					document.getElementById("text2").innerHTML= "";
+				}
+			}	
+	</script>
+
+
+	<h1> Radio Buttons </h1>
+
+	  <p>Inserisci la tua materia prferita:</p>
+	  <input type="radio" id="html" name="mat_preferita" value="Matematica">
+	  <label for="Matematica">Matematica</label><br>
+	  <input type="radio" id="sistemi" name="mat_preferita" value="Sistemi">
+	  <label for="Sistemi">Sistemi</label><br>
+	  <input type="radio" id="TPS" name="mat_preferita" value="TPS">
+	  <label for="TPS">TPS</label>
+
+	  <br>  
+
+	  <p>inserisci la tua età:</p>
+	  <input type="radio" id="età1" name="età" value="16">
+	  <label for="età1">16</label><br>
+	  <input type="radio" id="età2" name="età" value="17">
+	  <label for="età2">17</label><br>  
+	  <input type="radio" id="età3" name="età" value="18">
+	  <label for="età3">18</label><br><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+	</body>
+</html>
